@@ -1,0 +1,45 @@
+body {
+  padding: 0 1rem 1rem;
+}
+
+.source-target {
+  display: flex;
+  gap: 1rem;
+}
+
+.source,
+.target {
+  flex: 0 0 calc(50% - 0.5rem);
+}
+
+.field {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.unit {
+  margin-right: 0.5rem;
+}
+
+.unit > input {
+  margin-right: 0.25rem;
+}
+
+.input,
+.output {
+  margin-top: 1rem;
+  width: 100%;
+
+  font-family: monospace;
+  resize: vertical;
+}
+
+.algorithm {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .source-target {
+    flex-direction: column;
+  }
+}
